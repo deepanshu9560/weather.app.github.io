@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.weatherapp {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    box-shadow: 0 2px 20px 0 rgba(255, 255, 255, 0.4);
+    max-width: 700px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    height: 500px;
+    position: relative;
+    /* background-image: url(1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+form#formEl input {
+    width: 100%;
+    padding: 11px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+    outline: none;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 15px 0;
+    flex-wrap: wrap;
+}
+
+.temp h1 {
+    color: white;
+    font-family: system-ui;
+    font-size: 21px;
+}
+
+div#weatherChild h2 {
+    font-size: 21px;
+    font-family: system-ui;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.weatherImg {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+}
+
+.weatherImg img {
+    width: 70px;
+    background: rgb(255 255 255 / 60%);
+    border-radius: 50%;
+    height: 70px;
+}
+
+
+.loader img,
+img.gif {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1.noDataFound {
+    font-family: system-ui;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 21px;
+}
+
+@media (max-width: 580px) {
+    .temp h1 {
+        width: 50%;
+    }
+
+    .temp h1:last-child {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .temp h1 {
+        width: 100%;
+    }
+
+    .temp h1:first-child {
+        margin-bottom: 15px;
+    }
+
+    .container {
+        height: 546px;
+    }
+}
